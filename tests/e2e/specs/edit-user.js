@@ -20,7 +20,7 @@ describe('user', () => {
 		await page.type('#first_name', 'ankit');
 		await page.click('#submit');
 	})
-	it.only('change user role', async() => {
+	it('change user role', async() => {
 		await loginUser();
 		await visitAdminPage('users.php');
 		await page.waitForSelector('#user-1', {timeout: 50000});
