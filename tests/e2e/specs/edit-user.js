@@ -12,7 +12,7 @@ describe('user', () => {
 	it('edit user', async() => {
 		await loginUser();
 		await visitAdminPage('users.php');
-		await page.waitForSelector('#user-3', {timeout: 50000})
+		await page.waitForSelector('#user-1', {timeout: 50000})
 		await page.click('#user-1');
 		await page.click('.edit');
 		await page.waitForSelector('#first_name', {timeout: 50000})
